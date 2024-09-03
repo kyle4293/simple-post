@@ -12,6 +12,7 @@ import lombok.Setter;
 @Table(name = "Post") // 매핑할 테이블의 이름을 지정
 @NoArgsConstructor
 public class Post {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "title", nullable = false)
